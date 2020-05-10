@@ -3,24 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "main": "sass/mystyles.scss",
- "license": "MIT",
- "devDependencies": {
-   "bulma": "^0.7.2",
-   "node-sass": "^4.9.2"
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "jquery": "^3.5.1",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
   },
   "scripts": {
     "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "start": "npm run css-watch",
+    "dev": "lite-server",
+    "build:scss": "node-sass sass/mystyles.scss --output build --source-map-embed --source-map-contents",
+    "watch:scss": "npm run build:scss -- --watch",
+    "build": "npm run build:scss",
+    "serve": "npm run watch:scss -- & > /dev/null 2>&1; lite-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/csattie/labdes_covid19.git"
   },
   "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/csattie/labdes_covid19/issues"
   },
-  "homepage": "https://github.com/csattie/labdes_covid19#readme"
+  "homepage": "https://github.com/csattie/labdes_covid19#readme",
+  "dependencies": {}
 }
