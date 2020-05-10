@@ -5,12 +5,14 @@
 
 
 // Set your brand colors
-$purple: hsl(271, 100%, 71%);
-$pink: #FFFFFF;
+$purple: #a94bf9;
+$blue: #4c3bf2;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
+$light-blue:#e1e1ff;
 
+$navbar-item-img-max-height:3rem;
 
 // Update Bulma's global variables
 $family-sans-serif: 'Poppins', sans-serif;
@@ -19,7 +21,8 @@ $family-open: 'Open Sans', sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
-$link: $purple;
+$danger:$blue;
+$link: $light-blue;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
