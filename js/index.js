@@ -1,6 +1,7 @@
 $(function() {
-    $("#navigation").load("../navigation.html");
-    $("#footer").load("../footer.html");
+//    $("#navigation").load("../navigation.html");
+   $("#footer").load("../footer.html");
+   $("#header").load("../header.html");
 });
 
 $(document).ready(function() {
