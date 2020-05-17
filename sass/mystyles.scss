@@ -1,36 +1,61 @@
 @charset "utf-8";
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap');
 
 
-// Set your brand colors
-$purple: #a94bf9;
-$blue: #4c3bf2;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-$light-blue:#e1e1ff;
+//Colors
+$black:        hsl(0, 0%, 4%) ;
+$black-bis:    hsl(0, 0%, 7%) ;
+$black-ter:    hsl(0, 0%, 14%) ;
 
-$navbar-item-img-max-height:3rem;
+$grey-darker:  hsl(0, 0%, 21%) ;
+$grey-dark:    hsl(0, 0%, 29%) ;
+$grey:         hsl(0, 0%, 48%) ;
+$grey-light:   hsl(0, 0%, 71%) ;
+$grey-lighter: hsl(0, 0%, 86%) ;
+
+$white-ter:    hsl(0, 0%, 96%) ;
+$white-bis:    hsl(0, 0%, 98%) ;
+$white:        hsl(0, 0%, 100%) ;
+
+$blue: #6A64E2;
+
+$purple: #9C4BF9;
+$purple-light: #DEB7F8;
+$purple-dark: #8E35DB;
+
+$grayish: #726D7C;
+
+$beige: #EAE1EA;
+
+//Primary colors
+
+$primary: $purple;
+$link: $purple;
+$info: $purple-light;
+$success: $purple-dark;
+$warning: $grayish;
+$danger: $blue;
+// $dark: $grey-darker;
+// $text: $grey-dark;
+
+//title
+$title-color: $grey-darker ;
+$title-family: 'Livvic';
+
+$subtitle-color: $grey-dark ;
+
+//Typography
+$family-primary: 'Livvic';
+$family-secondary: 'Open Sans';
 
 // Update Bulma's global variables
-$family-sans-serif: 'Poppins', sans-serif;
-$family-open: 'Open Sans', sans-serif;
-
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$danger:$blue;
-$link: $light-blue;
+$navbar-item-img-max-height:3rem;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
-
-
-// Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
 $control-border-width: 2px;
-
+$footer-background-color: $purple-dark;
 
 
 // Import only what you need from Bulma

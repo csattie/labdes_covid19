@@ -1,0 +1,93 @@
+@charset "utf-8";
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap');
+
+
+
+// Set your brand colors
+$purple: #a94bf9;
+$blue: #4c3bf2;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$light-blue:#e1e1ff;
+
+//TYPOGRAPHY
+$family-secondary: 'Livvic', sans-serif;
+$family-primary: 'Open Sans', sans-serif;
+
+// Colors Variables
+
+
+$black:        hsl(0, 0%, 4%) ;
+$black-bis:    hsl(0, 0%, 7%) ;
+$black-ter:    hsl(0, 0%, 14%) ;
+
+$grey-darker:  hsl(0, 0%, 21%) ;
+$grey-dark:    hsl(0, 0%, 29%) ;
+$grey:         hsl(0, 0%, 48%) ;
+$grey-light:   hsl(0, 0%, 71%) ;
+$grey-lighter: hsl(0, 0%, 86%) ;
+
+$white-ter:    hsl(0, 0%, 96%) ;
+$white-bis:    hsl(0, 0%, 98%) ;
+$white:        hsl(0, 0%, 100%) ;
+
+$orange:       hsl(14,  100%, 53%) ;
+$yellow:       hsl(48,  100%, 67%) ;
+$green:        hsl(141, 71%,  48%) ;
+$turquoise:    hsl(171, 100%, 41%) ;
+$cyan:         hsl(204, 86%,  53%) ;
+$blue:         hsl(217, 71%,  53%) ;
+$purple:       hsl(271, 100%, 71%) ;
+$red:          hsl(348, 100%, 61%) ;
+
+$text: $grey-darker
+
+// Update Bulma's global variables;
+//$navbar-item-img-max-height: 3rem;
+//$widescreen-enabled: false;
+//$fullhd-enabled: false;
+//$control-border-width: 2px;
+
+//title
+$title-color: $grey-darker ;
+$title-family: 'Livvic' sans-serif ;
+$title-weight: $weight-bold ;
+
+$subtitle-color: $grey-dark ;
+$subtitle-family: false ;
+$subtitle-size: $size-5 ;
+$subtitle-weight: $weight-normal ;
+
+//button
+$button-color: $grey-darker ;
+$button-background-color: $white ;
+
+//body
+$body-background-color: $white ;
+$body-size: 16px ;
+$body-min-width: 300px ;
+$body-family: $family-secondary ;
+
+$body-color: $text ;
+$body-font-size: 1em ;
+$body-weight: $weight-normal ;
+
+$code-family: $family-code ;
+$code-padding: 0.25em 0.5em 0.25em ;
+$code-weight: normal ;
+$code-size: 0.875em ;
+
+
+// Import only what you need from Bulma
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";

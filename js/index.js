@@ -2,6 +2,10 @@ $(function() {
 //    $("#navigation").load("../navigation.html");
    $("#footer").load("../footer.html");
    $("#header").load("../header.html");
+   $("#quemsomos").load("../quemsomos.html");
+   $("#contato").load("../contato.html");
+   $("#iniciativas").load("../iniciativas.html");
+   $("#comoajudar").load("../comoajudar.html");
 });
 
 $(document).ready(function() {
@@ -13,5 +17,14 @@ $(document).ready(function() {
       $(".navbar-burger").toggleClass("is-active");
       $(".navbar-menu").toggleClass("is-active");
 
+  });
+});
+
+$("#my-form").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
   });
 });
