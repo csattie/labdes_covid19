@@ -58,6 +58,15 @@ $control-border-width: 2px;
 $footer-background-color: $purple-dark;
 $footer-padding: 3rem 1.5rem 1rem;
 
+
+// table
+$table-color: $purple-light;
+$table-background-color:$purple-dark;
+$table-cell-heading-color:white;
+$table-head-cell-color:white;
+$table-striped-row-even-background-color:$purple-dark;
+$table-row-hover-background-color:$purple;
+$table-striped-row-even-hover-background-color:$purple;
 // Import only what you need from Bulma
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";
