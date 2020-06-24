@@ -2,7 +2,7 @@ $(function() {
 //    $("#navigation").load("../navigation.html");
    $("#footer").load("../footer.html");
    $("#header").load("../header.html");
-   $("#dialogos").load("../dialogos.html");
+//   $("#dialogos").load("../dialogos.html");
    $("#quemsomos").load("../quemsomos.html");
    $("#contato").load("../contato.html");
    $("#iniciativas").load("../iniciativas.html");
