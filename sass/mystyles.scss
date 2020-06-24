@@ -43,7 +43,7 @@ $danger: $blue;
 //title
 $title-color: $grey-darker ;
 $title-family: 'Livvic';
-
+$title-weight:700;
 $subtitle-color: $grey-dark ;
 
 //Typography
@@ -57,7 +57,7 @@ $fullhd-enabled: false;
 $control-border-width: 2px;
 $footer-background-color: $purple-dark;
 $footer-padding: 3rem 1.5rem 1rem;
-
+$card-shadow:0;
 
 // table
 $table-color: $purple-light;
@@ -67,6 +67,15 @@ $table-head-cell-color:white;
 $table-striped-row-even-background-color:$purple-dark;
 $table-row-hover-background-color:$purple;
 $table-striped-row-even-hover-background-color:$purple;
+
+$card-shadow:0;
+$card-header-shadow:0;
+$card-header-background-color:$purple;
+$card-header-color:white;
+
+.card-header-title {
+  font-family:"Livvic";
+}
 // Import only what you need from Bulma
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";

@@ -2,7 +2,7 @@ $(function() {
 //    $("#navigation").load("../navigation.html");
    $("#footer").load("../footer.html");
    $("#header").load("../header.html");
-      $("#dialogos").load("../dialogos.html");
+   $("#dialogos").load("../dialogos.html");
    $("#quemsomos").load("../quemsomos.html");
    $("#contato").load("../contato.html");
    $("#iniciativas").load("../iniciativas.html");
@@ -26,6 +26,15 @@ $("#my-form").submit(function(e) {
 
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("Thank you!");
+    alert("Obrigado!");
   });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  let cardToggles = document.getElementsByClassName('card-toggle');
+  for (let i = 0; i < cardToggles.length; i++) {
+    cardToggles[i].addEventListener('click', e => {
+      e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden');
+    });
+  }
 });
